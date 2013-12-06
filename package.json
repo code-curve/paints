@@ -2,7 +2,7 @@
   "name": "paints",
   "version": "0.0.0",
   "description": "Color themes",
-  "main": "dist/paints.js",
+  "main": "main.js",
   "directories": {
     "example": "examples",
     "test": "test"
@@ -20,11 +20,7 @@
     "url": "https://github.com/code-curve/palette/issues"
   },
   "dependencies": {
-    "grunt-contrib-concat": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-browserify": "*",
     "handlebars": "*",
-    "gm": "*",
-    "colors": "*"
+    "gm": "*"
   }
 }
