@@ -1,4 +1,4 @@
-Palette
+Paints
 =======
 
 A flexible lightweight Javascript color theme provider, designed with canvas in mind. Pick from a large number of color themes, generate as many colours as you need, then start using them in your project. Check out our [examples]() for some ideas.  
@@ -9,14 +9,14 @@ A flexible lightweight Javascript color theme provider, designed with canvas in 
 ### Browser
 If you want to use palette in your browser, then simply grab the [production](palettejs.min.js) or [development](palettejs.js) scripts, embed them in your project and you are ready to use palette.
 ```js
-var icey = palette('ice', 20);
+var icey = paints('ice', 20);
 ```
 
 ### Node
 Fire up npm and run `npm install palettejs` then require it and get started.
 ```js
-var palette = require('palettejs');
-var icey = palette('ice', 30);
+var paints = require('paints');
+var icey = paints('ice', 30);
 ```
 
 ## Getting started
@@ -24,7 +24,7 @@ var icey = palette('ice', 30);
 Palette is a breeze to use
 
 ```js
-palette('reds', 10);
+paints('reds', 10);
 ```
 
 This call would return an array of 10 hex colors from the _reds_
