@@ -39,7 +39,7 @@
         rgb: createColor('rgb($1, $2, $3)')
     };
 
-    var palette = function(themeName, quantity) {
+    var palette = function(themeName, quantity, shuffled) {
         var mode = modes.hex,
             theme = themes[themeName],
             colors = [];
@@ -57,6 +57,10 @@
             colors.push(mode.apply(this, rgb));
         }
         
+        if(shuffled) {
+            colors = util.shuffle(colors);
+        }
+
         return colors;
     };
 

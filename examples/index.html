@@ -5,14 +5,24 @@
     <title>PaletteJS</title>
     <script>
 
-    var make = function(colors) {
+    var make = function(colors, theme) {
         var swatches = document.getElementById('swatches');
         
+        
         for(var i = 0; i < colors.length; i++) {
-            console.log(colors[i]);
             var sw = document.createElement('div');
             sw.style.backgroundColor = colors[i];
             swatches.appendChild(sw);
+        }
+
+        var name = document.createElement('h5');
+        name.innerHTML = theme;
+        swatches.appendChild(name); 
+    };
+
+    window.onload = function() {
+        for(var i in themes) {
+            make(palette(i, 20), i);
         } 
     };
 

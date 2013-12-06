@@ -70,6 +70,55 @@ var themes = {
         var s = 30;
         var l = 50;    
         return hslToRgb(h, s, l);
-    }
+    },
 
+    pond: function(x) {
+        var h = 100 + x * 100;
+        var s = 80;
+        var l = 20;    
+        return hslToRgb(h, s, l);
+    },
+
+    stars: function(x) {
+        var h, s, l;
+        if(x > 0.1) {
+            h = 200;
+            s = x * 30 + 50;
+            l = x * 20;    
+        } else {
+            h = 50;
+            s = 90;
+            l = 70 * (1 - x);
+        }
+        
+        return hslToRgb(h, s, l);
+    },
+
+    night: function(x) {
+        var h = 220 + 60 * x;
+        var s = 80;
+        var l = 5 + 10 * x;     
+        return hslToRgb(h, s, l);
+    },
+
+    dream: function(x) {
+        var h = 220 + x * 60;
+        var s = x < 0.2 ? 0 : 90;
+        var l = x < 0.2 ? 50     + x * 30 : 70;     
+        return hslToRgb(h, s, l);
+    },
+
+    avocado: function(x) {
+        var h = 100 - x * 70;
+        var s = 60;
+        var l = 50;     
+        return hslToRgb(h, s, l);
+    },
+
+    morgul: function(x) {
+        var h = 100 + x * 60;
+        var s = 60;
+        var l = x * 40;     
+        return hslToRgb(h, s, l);
+    }
 };
