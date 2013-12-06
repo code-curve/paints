@@ -1,11 +1,26 @@
 {
   "name": "palette",
   "version": "0.0.0",
-  "description": "Colour themes",
-  "main": "index.js",
+  "description": "Color thems",
+  "main": "Gruntfile.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "BSD-2-Clause"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/code-curve/palette.git"
+  },
+  "author": "Dan Prince",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/code-curve/palette/issues"
+  },
+  "dependencies": {
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*"
+  }
 }
