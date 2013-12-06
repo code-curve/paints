@@ -123,4 +123,5 @@ module.exports = {
         var l = x * 40;     
         return hslToRgb(h, s, l);
     }
+
 };

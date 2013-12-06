@@ -1,3 +1,15 @@
+;(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+var palette = require('./src/palette.js');
+var themes = require('./src/themes.js');
+module.exports = palette;
+
+if(typeof window === 'object') {
+    window.palette = palette;
+    window.themes = themes;
+}
+
+
+},{"./src/palette.js":5,"./src/themes.js":6}],2:[function(require,module,exports){
 /* As defined in the CSS3 specification 
 http://www.w3.org/TR/2011/REC-css3-color-20110607/#hsl-color
 */
@@ -37,7 +49,9 @@ var hslToRgb = function(h, s, l) {
 
 module.exports = {
     hslToRgb: hslToRgb
-};var util = require('./util');
+}
+},{}],3:[function(require,module,exports){
+var util = require('./util');
 
 module.exports = function(template, base) {
     base = base || 10;
@@ -72,12 +86,16 @@ module.exports = function(template, base) {
         return tpl;
     };
 };
-;var format = require('./format');
+
+},{"./util":7}],4:[function(require,module,exports){
+var format = require('./format');
 
 module.exports = {
     hex: format('#$1$2$3', 16),
     rgb: format('rgb($1, $2, $3)')
-};;var themes = require('./themes');
+};
+},{"./format":3}],5:[function(require,module,exports){
+var themes = require('./themes');
 var util = require('./util');
 var modes = require('./modes');
 
@@ -107,7 +125,9 @@ module.exports = function(name, quantity, shuffled) {
 };
 
 
-;var hslToRgb = require('./color').hslToRgb;
+
+},{"./modes":4,"./themes":6,"./util":7}],6:[function(require,module,exports){
+var hslToRgb = require('./color').hslToRgb;
 
 module.exports = {
     
@@ -234,7 +254,9 @@ module.exports = {
     }
 
 };
-;module.exports = {
+
+},{"./color":2}],7:[function(require,module,exports){
+module.exports = {
     pad: function(num, len) {
         while(num.length < len) {
             num = "0" + num;
@@ -255,3 +277,5 @@ module.exports = {
         return arr;
     }
 };
+},{}]},{},[1])
+;

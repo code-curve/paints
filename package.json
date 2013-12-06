@@ -22,6 +22,7 @@
   "dependencies": {
     "grunt-contrib-concat": "*",
     "grunt-contrib-uglify": "*",
-    "grunt-browserify": "*"
+    "grunt-browserify": "*",
+    "handlebars": "*"
   }
 }
