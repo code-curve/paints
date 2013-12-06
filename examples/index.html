@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PaletteJS</title>
+    <script>
+
+    var make = function(colors) {
+        var swatches = document.getElementById('swatches');
+        
+        for(var i = 0; i < colors.length; i++) {
+            console.log(colors[i]);
+            var sw = document.createElement('div');
+            sw.style.backgroundColor = colors[i];
+            swatches.appendChild(sw);
+        } 
+    };
+
+    </script>
+    <style>
+        #swatches {
+            overflow:hidden;
+        }
+        #swatches div {
+            width:24px;
+            height:24px;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <div id='swatches'></div>
+    <script src='../src/util.js'></script>
+    <script src='../src/color.js'></script>
+    <script src='../src/themes.js'></script>
+    <script src='../src/palette.js'></script>
+</body>
+</html>
