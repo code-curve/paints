@@ -16,3 +16,37 @@ theme. Check out [themes](#themes) for a complete list of themes.
 
 ## Themes
 
+ - reds
+
+ - greens
+
+ - blues
+
+ - greyscale
+
+ - ice
+
+ - fire
+
+ - earth
+
+ - pastel
+
+ - zurg
+
+ - monaLisa
+
+ - sea
+
+ - pond
+
+ - stars
+
+ - night
+
+ - dream
+
+ - avocado
+
+ - morgul
+
