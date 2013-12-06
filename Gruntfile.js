@@ -16,7 +16,14 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'dist/<%= pkg.name %>.min.js' : ['<%= concat.dist.dest %>']
+                    './<%= pkg.name %>.min.js' : ['<%= concat.dist.dest %>']
+                }
+            }
+        },
+        browserify: {
+            dist: {
+                files: {
+                    './palette.js': ['<%= concat.dist.dest %>palette.js']
                 }
             }
         }
@@ -24,7 +31,8 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-browserify');
     
-    grunt.registerTask('default', ['concat', 'uglify']);
+    grunt.registerTask('default', ['concat', 'browserify', 'uglify']);
 
 };

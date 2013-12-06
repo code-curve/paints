@@ -1,8 +1,8 @@
 {
   "name": "palette",
   "version": "0.0.0",
-  "description": "Color thems",
-  "main": "Gruntfile.js",
+  "description": "Color themes",
+  "main": "dist/palette.js",
   "directories": {
     "example": "examples",
     "test": "test"
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "grunt-contrib-concat": "*",
-    "grunt-contrib-uglify": "*"
+    "grunt-contrib-uglify": "*",
+    "grunt-browserify": "*"
   }
 }

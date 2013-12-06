@@ -1,5 +1,5 @@
 var themes = {
-    // 
+    
     reds: function(x) {
         var h = 0;
         var s = 40 + x * 30;
