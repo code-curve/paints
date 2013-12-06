@@ -23,6 +23,7 @@
     "grunt-contrib-concat": "*",
     "grunt-contrib-uglify": "*",
     "grunt-browserify": "*",
-    "handlebars": "*"
+    "handlebars": "*",
+    "gm": "*"
   }
 }
