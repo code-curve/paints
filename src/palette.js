@@ -1,45 +1,10 @@
-var createColor = function(template, base) {
-    base = base || 10;
-    
-    return function() {
-        var locate = '$',
-            color = arguments,
-            // variable freezing hack
-            tpl = template.substr(0);
-        
-        // template values in at $ locations
-        for(var i = 0; i < color.length; i++) {
+var themes = require('./themes');
+var util = require('./util');
+var modes = require('./modes');
 
-            var insert = color[i].toString(base);
-            var find = locate + (i + 1);
-            
-            if(base == 16) {
-                insert = util.pad(insert, 2);
-            }
-            
-            tpl = tpl.replace(find, insert);
-        }
-        
-        // fix some useful properties
-        // to our color object
-        var out = new String(tpl);
-        out.rgb = color;
-        out.r = color[0];
-        out.g = color[1];
-        out.b = color[2];
-        
-        return tpl;
-    };
-};
-
-var modes = {
-    hex: createColor('#$1$2$3', 16),
-    rgb: createColor('rgb($1, $2, $3)')
-};
-
-module.exports = function(themeName, quantity, shuffled) {
+module.exports = function(name, quantity, shuffled) {
     var mode = modes.hex,
-        theme = themes[themeName],
+        theme = themes[name],
         colors = [];
 
     for(var i = 0; i < quantity; i++) {

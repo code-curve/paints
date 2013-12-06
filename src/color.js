@@ -34,3 +34,7 @@ var hslToRgb = function(h, s, l) {
     color.b = b;
     return color;
 };
+
+module.exports = {
+    hslToRgb: hslToRgb
+}

@@ -34,9 +34,14 @@ var hslToRgb = function(h, s, l) {
     color.b = b;
     return color;
 };
-;var createColor = function(template, base) {
+
+module.exports = {
+    hslToRgb: hslToRgb
+};var util = require('./util');
+
+module.exports = function(template, base) {
     base = base || 10;
-    
+        
     return function() {
         var locate = '$',
             color = arguments,
@@ -67,15 +72,18 @@ var hslToRgb = function(h, s, l) {
         return tpl;
     };
 };
+;var format = require('./format');
 
-var modes = {
-    hex: createColor('#$1$2$3', 16),
-    rgb: createColor('rgb($1, $2, $3)')
-};
+module.exports = {
+    hex: format('#$1$2$3', 16),
+    rgb: format('rgb($1, $2, $3)')
+};;var themes = require('./themes');
+var util = require('./util');
+var modes = require('./modes');
 
-module.exports = function(themeName, quantity, shuffled) {
+module.exports = function(name, quantity, shuffled) {
     var mode = modes.hex,
-        theme = themes[themeName],
+        theme = themes[name],
         colors = [];
 
     for(var i = 0; i < quantity; i++) {
@@ -99,7 +107,9 @@ module.exports = function(themeName, quantity, shuffled) {
 };
 
 
-;var themes = {
+;var hslToRgb = require('./color').hslToRgb;
+
+module.exports = {
     
     reds: function(x) {
         var h = 0;
@@ -223,7 +233,7 @@ module.exports = function(themeName, quantity, shuffled) {
         return hslToRgb(h, s, l);
     }
 };
-;var util = {
+;module.exports = {
     pad: function(num, len) {
         while(num.length < len) {
             num = "0" + num;

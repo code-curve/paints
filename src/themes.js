@@ -1,4 +1,6 @@
-var themes = {
+var hslToRgb = require('./color').hslToRgb;
+
+module.exports = {
     
     reds: function(x) {
         var h = 0;

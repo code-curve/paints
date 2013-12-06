@@ -16,14 +16,14 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    './<%= pkg.name %>.min.js' : ['<%= concat.dist.dest %>']
+                    './<%= pkg.name %>.min.js' : ['<%= pkg.name %>.js']
                 }
             }
         },
         browserify: {
             dist: {
                 files: {
-                    './palette.js': ['<%= concat.dist.dest %>palette.js']
+                    './palette.js': ['main.js']
                 }
             }
         }
