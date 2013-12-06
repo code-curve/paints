@@ -8,18 +8,18 @@ var src = 'TEMPLATE.md';
 var dst = 'README.md';
 var dir = __dirname + '/themes/';
 
-var img = gm(dir + 'blank.png');
-console.log(img);
-
 for(var name in themes) {
+    var img = gm(dir + 'blank.png');
     (function(img) {
         var colors = palette(name, 10);
         
         for(var i = 0; i < colors.length; i++) {
-            console.log(colors);
-            img.drawRectangle(i * 10, 0, 10, 10).fill(colors[i]);
+            (function(color, i) {
+                img.drawRectangle(i * 10, 0, 10, 10).fill(color);
+            })(colors[i], i);
         }
         
+        console.log(' ');
         img.write(dir + name + '.png', function(err) {
             if(err) throw err;
         });

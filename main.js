@@ -1,9 +1,9 @@
-var palette = require('./src/palette.js');
+var paints = require('./src/paints.js');
 var themes = require('./src/themes.js');
-module.exports = palette;
+module.exports = paints;
 
 if(typeof window === 'object') {
-    window.palette = palette;
+    window.paints = paints;
     window.themes = themes;
 }
 

@@ -2,86 +2,86 @@ var hslToRgb = require('./color').hslToRgb;
 
 module.exports = {
     
-    reds: function(x) {
+    'reds': function(x) {
         var h = 0;
         var s = 40 + x * 30;
         var l = 30 + x * 20;
         return hslToRgb(h, s, l);
     },
 
-    greens: function(x) {
+    'greens': function(x) {
         var h = 90;
         var s = 40 + x * 30;
         var l = 30 + x * 20;
         return hslToRgb(h, s, l);
     },
 
-    blues: function(x) {
+    'blues': function(x) {
         var h = 220;
         var s = 40 + x * 30;
         var l = 30 + x * 20;
         return hslToRgb(h, s, l);
     },
 
-    greyscale: function(x) {
+    'greyscale': function(x) {
         var v = x * 255;
         return [v, v, v];
     },
 
-    ice: function(x) {
+    'ice': function(x) {
         return hslToRgb(180, 80, 60 + x * 40);
     },
 
-    fire: function(x) {
+    'fire': function(x) {
         var h = x * 30;
         var s = 80 + x * 20;
         var l = 20 + x * 50;
         return hslToRgb(h, s, l);
     },
 
-    earth: function(x) {
+    'earth': function(x) {
         var h = 0 + x * 100;
         var s = 50 + x * 20;
         var l = 20 + x * 50;
         return hslToRgb(h, s, l);
     },
 
-    pastel: function(x) {
+    'pastel': function(x) {
         var h = x * 360;
         var s = 70;
         var l = 80;
         return hslToRgb(h, s, l);
     },
 
-    zurg: function(x) {
+    'zurg': function(x) {
         var h = 200 + x * 160;
         var s = 80 + x * 20;
         var l = 20 + x * 50;
         return hslToRgb(h, s, l);
     },
 
-    monaLisa: function(x) {
+    'monaLisa': function(x) {
         var h = 60 - x * 20;
         var s = 30;
         var l = 10 + x * 60;    
         return hslToRgb(h, s, l);
     },
 
-    sea: function(x) {
+    'sea': function(x) {
         var h = 180 + x * 40;
         var s = 30;
         var l = 50;    
         return hslToRgb(h, s, l);
     },
 
-    pond: function(x) {
+    'pond': function(x) {
         var h = 100 + x * 100;
         var s = 80;
         var l = 20;    
         return hslToRgb(h, s, l);
     },
 
-    stars: function(x) {
+    'stars': function(x) {
         var h, s, l;
         if(x > 0.1) {
             h = 200;
@@ -96,28 +96,28 @@ module.exports = {
         return hslToRgb(h, s, l);
     },
 
-    night: function(x) {
+    'night': function(x) {
         var h = 220 + 60 * x;
         var s = 80;
         var l = 5 + 10 * x;     
         return hslToRgb(h, s, l);
     },
 
-    dream: function(x) {
+    'dream': function(x) {
         var h = 220 + x * 60;
         var s = x < 0.2 ? 0 : 90;
         var l = x < 0.2 ? 50     + x * 30 : 70;     
         return hslToRgb(h, s, l);
     },
 
-    avocado: function(x) {
+    'avocado': function(x) {
         var h = 100 - x * 70;
         var s = 60;
         var l = 50;     
         return hslToRgb(h, s, l);
     },
 
-    morgul: function(x) {
+    'morgul': function(x) {
         var h = 100 + x * 60;
         var s = 60;
         var l = x * 40;     

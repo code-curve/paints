@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         },
         uglify: {
             options: {
-                banner: '/* <%= pkg.name - pkg.version %> */\n'
+                banner: '/* <%= pkg.name %> <%= pkg.version %> */\n'
             },
             dist: {
                 files: {
@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         browserify: {
             dist: {
                 files: {
-                    './palette.js': ['main.js']
+                    './<%= pkg.name %>.js': ['main.js']
                 }
             }
         }

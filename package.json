@@ -1,8 +1,8 @@
 {
-  "name": "palette",
+  "name": "paints",
   "version": "0.0.0",
   "description": "Color themes",
-  "main": "dist/palette.js",
+  "main": "dist/paints.js",
   "directories": {
     "example": "examples",
     "test": "test"
@@ -24,6 +24,7 @@
     "grunt-contrib-uglify": "*",
     "grunt-browserify": "*",
     "handlebars": "*",
-    "gm": "*"
+    "gm": "*",
+    "colors": "*"
   }
 }
