@@ -33,23 +33,40 @@ This call would return an array of 10 hex colors from the _reds_
 theme. Check out [themes](#themes) for a complete list of themes.
 
 ## Themes
+
  - ![alt text](./themes/reds.png "reds")
-reds - ![alt text](./themes/greens.png "greens")
-greens - ![alt text](./themes/blues.png "blues")
-blues - ![alt text](./themes/greyscale.png "greyscale")
-greyscale - ![alt text](./themes/ice.png "ice")
-ice - ![alt text](./themes/fire.png "fire")
-fire - ![alt text](./themes/earth.png "earth")
-earth - ![alt text](./themes/pastel.png "pastel")
-pastel - ![alt text](./themes/zurg.png "zurg")
-zurg - ![alt text](./themes/monaLisa.png "monaLisa")
-monaLisa - ![alt text](./themes/sea.png "sea")
-sea - ![alt text](./themes/pond.png "pond")
-pond - ![alt text](./themes/stars.png "stars")
-stars - ![alt text](./themes/night.png "night")
-night - ![alt text](./themes/dream.png "dream")
-dream - ![alt text](./themes/avocado.png "avocado")
-avocado - ![alt text](./themes/morgul.png "morgul")
+reds
+ - ![alt text](./themes/greens.png "greens")
+greens
+ - ![alt text](./themes/blues.png "blues")
+blues
+ - ![alt text](./themes/greyscale.png "greyscale")
+greyscale
+ - ![alt text](./themes/ice.png "ice")
+ice
+ - ![alt text](./themes/fire.png "fire")
+fire
+ - ![alt text](./themes/earth.png "earth")
+earth
+ - ![alt text](./themes/pastel.png "pastel")
+pastel
+ - ![alt text](./themes/zurg.png "zurg")
+zurg
+ - ![alt text](./themes/monaLisa.png "monaLisa")
+monaLisa
+ - ![alt text](./themes/sea.png "sea")
+sea
+ - ![alt text](./themes/pond.png "pond")
+pond
+ - ![alt text](./themes/stars.png "stars")
+stars
+ - ![alt text](./themes/night.png "night")
+night
+ - ![alt text](./themes/dream.png "dream")
+dream
+ - ![alt text](./themes/avocado.png "avocado")
+avocado
+ - ![alt text](./themes/morgul.png "morgul")
 morgul
 
 ## Contributing

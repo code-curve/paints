@@ -33,7 +33,8 @@ This call would return an array of 10 hex colors from the _reds_
 theme. Check out [themes](#themes) for a complete list of themes.
 
 ## Themes
-{{#each themes}} - ![alt text](./themes/{{@key}}.png "{{@key}}")
+{{#each themes}}
+ - ![alt text](./themes/{{@key}}.png "{{@key}}")
 {{@key}}{{/each}}
 
 ## Contributing
