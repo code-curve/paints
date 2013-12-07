@@ -68,6 +68,14 @@ dream
 avocado
  - ![alt text](./themes/morgul.png "morgul")
 morgul
+ - ![alt text](./themes/rainbow.png "rainbow")
+rainbow
+ - ![alt text](./themes/mirkwood.png "mirkwood")
+mirkwood
+ - ![alt text](./themes/rand2.png "rand2")
+rand2
+ - ![alt text](./themes/rand3.png "rand3")
+rand3
 
 ## Contributing
 

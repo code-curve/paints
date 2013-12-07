@@ -1,5 +1,5 @@
 var themes = require('./src/themes');
-var palette = require('./src/palette');
+var palette = require('./src/paints');
 var handlebars = require('handlebars');
 var fs = require('fs');
 var gm = require('gm').subClass({imageMagick: true});
@@ -19,7 +19,7 @@ for(var name in themes) {
             })(colors[i], i);
         }
         
-        console.log(' ');
+        console.log('Creating swatch for ' + name);
         img.write(dir + name + '.png', function(err) {
             if(err) throw err;
         });

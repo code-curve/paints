@@ -251,7 +251,33 @@ module.exports = {
         var s = 60;
         var l = x * 40;     
         return hslToRgb(h, s, l);
-    }
+    },
+
+   'rainbow': function(x) {
+        var h = x * 500 % 360;
+        var s = 100;
+        var l = 60;     
+        return hslToRgb(h, s, l);
+    },
+   'mirkwood': function(x) {
+        var h = 100;
+        var s = 100 * x;
+        var l = x * 40;     
+        return hslToRgb(h, s, l);
+    },
+   'rand2': function(x) {
+        var h = Math.tan(x) * 360;
+        var s = 40;
+        var l = 40;     
+        return hslToRgb(h, s, l);
+    },
+   'rand3': function(x) {
+        var h = (x * 3) * 120;
+        var s = (x * 2) * 50;
+        var l = x * 100;     
+        return hslToRgb(h, s, l);
+    },
+
 
 };
 
