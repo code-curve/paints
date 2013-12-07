@@ -2,7 +2,7 @@ Paints
 =======
 
 A flexible lightweight Javascript color theme provider, designed with canvas in mind. Pick from a large number of color themes, generate as many colours as you need, then start using them in your project. Check out our [examples]() for some ideas.  
-
+Check out a quick [demo](http://code-curve.github.io/paints/).
 ===
 
 ## Installation
