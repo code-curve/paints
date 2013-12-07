@@ -1,7 +1,128 @@
 html, body {
     font-family:'Coming Soon', serif;    
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100%;
+    background-image:url(../img/linedpaper.png);
+}
+
+a {
+    color:rgb(0, 153, 255);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family:'Permanent Marker', serif;
+    margin-top:0;
+    padding-top:0;
+}
+
+.top {
+    padding-top:50px !important;
+    margin:0 !important;
+}
+
+.left.sidebar {
+    position:absolute;
+    width:200px;
+    height:100%;
+    overflow-y:scroll;
+    left:0;
+    background-color:#eee;
+    text-align: center;
+}
+
+.preview {
+    height:100%;
+    padding-left:194px;
+}
+
+.themes {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+
+.themes li {
+    border-bottom:solid 1px #ddd;
+    border-top:solid 1px #f8f8f8;
+    overflow:auto;
+    text-align:center;
+    padding:4px 2px;
+    cursor:pointer;
+}
+
+.themes li .title {
+    display:none;
+}
+
+.themes li:hover {
+    background-color:#f9f9f9;
+}
+
+.themes li:hover .title {
+    display:block;
+}
+
+.swatch {
+    height:18px;
+    width:18px;
+    float:left;
+}
+
+.blocks {
+    overflow:hidden;
+    width:288px;
+    margin:20px auto;
+}
+
+.block {
+    height:96px;
+    width:96px;
+    float:left;   
+}
+
+.author {
+    color:#555;
+}
+
+.author:before {
+    content:'@';
+}
+
+.logo {
+    text-align:center;
+    font-weight:400;
+    margin-bottom:17px;
+}
+
+.description {
+    width:300px;
+    margin:0px auto;
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+.half {
+    width:50%;
+    height:100%;
+    float:left;
+    border-right:solid 1px #ddd;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+.hint {
+    text-align:center;
+}
+
+.code {
+    background-color:#fff;
+    border-radius:3px;
+    border:solid 1px #ddd;
+    width:300px;
+    margin:0 auto;
+    padding:10px;
+    font-family:'Courier', monospace;
 }

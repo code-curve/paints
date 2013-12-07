@@ -2,12 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Paints</title>
     <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Coming+Soon' rel='stylesheet' type='text/css'>
     <link href='css/global.css' rel='stylesheet'></link>
-    <link href='bower_components/semantic/build/packaged/css/semantic.min.css'>
 </head>
 <body>
-    <h1>Paints</h1>
+    <div class="left sidebar">
+      Themes
+      <ul id="themes" class="themes"></ul>
+    </div>
+    <div class="preview">
+      <div class="half">
+        <h2 id='theme' class='logo'></h2>
+        
+        <div class="blocks">
+          <div class='block'></div>
+          <div class='block'></div>
+          <div class='block'></div>
+          <div class='block'></div>
+          <div class='block'></div>
+          <div class='block'></div>
+          <div class='block'></div>
+          <div class='block'></div>
+          <div class='block'></div>
+          <div class='block'></div>
+        </div>
+        
+        <p class="hint">
+          Hover over a swatch from the left.</p>
+
+        <div id='json' class='code' contentEditable></div>
+        <p class="hint">
+          Feel free to take a JSON!
+        </p>
+      </div>
+
+      <div class="half">
+        <h1 class='logo'>Paints</h1>
+        <p class="description">
+          Paints is a nodejs color scheme project designed
+          to give js hackers and user interface
+          designers quick access to an arbitrary number of colors
+          based on one of the many themes here. Check 
+          out some <a href="examples.html">examples</a>.        
+        </p>
+        <p class="description">
+          <strong>Get paints for your browser</strong>
+          <br/>
+          Get <a href="https://raw.github.com/code-curve/paints/master/paints.js">paints.js</a>
+          or <a href="https://raw.github.com/code-curve/paints/master/paints.min.js">paints.min.js</a>
+        </p>
+        <p class="description">
+          <strong>Get paints for nodejs</strong>
+          <br/>
+          npm install paints
+        </p>
+
+        <p class="description">
+          <strong>Contribute</strong>
+          <br/>
+          Got an idea for a theme? Pop over to 
+          the <a href="https://github.com/code-curve/paints">GitHub page</a> to get involved!
+        </p>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src='js/paints.min.js'></script>
+    <script src='js/main.js'></script>
 </body>
 </html>
