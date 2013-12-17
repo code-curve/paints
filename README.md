@@ -1,7 +1,7 @@
 Paints
 =======
 
-A flexible lightweight Javascript color theme provider, designed with canvas in mind. Pick from a large number of color themes, generate as many colours as you need, then start using them in your project. Check out our [examples]() for some ideas.  
+A flexible lightweight Javascript dynamic color theme provider, designed with canvas in mind. Pick from a large number of color themes, generate as many colours as you need, then start using them in your project. Check out our [examples]() for some ideas.  
 
 Check out a quick [demo](http://code-curve.github.io/paints/).
 
@@ -9,13 +9,13 @@ Check out a quick [demo](http://code-curve.github.io/paints/).
 
 ## Installation
 ### Browser
-If you want to use palette in your browser, then simply grab the [production](palettejs.min.js) or [development](palettejs.js) scripts, embed them in your project and you are ready to use palette.
+If you want to use palette in your browser, then simply grab the [production](paints.min.js) or [development](paints.js) scripts, embed them in your project and you are ready to use paints.
 ```js
 var icey = paints('ice', 20);
 ```
 
 ### Node
-Fire up npm and run `npm install palettejs` then require it and get started.
+Fire up npm and run `npm install paints` then require it and get started.
 ```js
 var paints = require('paints');
 var icey = paints('ice', 30);
@@ -23,7 +23,7 @@ var icey = paints('ice', 30);
 
 ## Getting started
 
-Palette is a breeze to use
+Paints is a breeze to use
 
 ```js
 paints('reds', 10);
